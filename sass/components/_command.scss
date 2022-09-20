@@ -1,0 +1,72 @@
+.command__title {
+  margin-bottom: 50px;
+}
+.command {
+  background-color: var(--bcg-main);
+}
+.command__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /*justify-content: space-between;*/
+}
+.command__box {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px var(--box-shadow-command1),
+    0px 1px 1px var(--box-shadow-command2),
+    0px 2px 1px var(--box-shadow-command3);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.command__human {
+  text-align: center;
+  padding: 30px 0;
+}
+.command__human-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.command__human-vocation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+.command__human-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.command__human-item {
+  width: 44px;
+  height: 44px;
+}
+.command__human-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--client-icon-color);
+  transition: fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
+}

@@ -1,0 +1,34 @@
+.work-section {
+  padding-top: 0;
+  display: none;
+  @include desktop {
+    display: contents;
+  }
+}
+.work__title {
+  margin-bottom: 50px;
+}
+.work__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.work__img {
+  display: block;
+}
+.work__box {
+  position: relative;
+}
+.work__over {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bcg-over);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  padding: 27px;
+}

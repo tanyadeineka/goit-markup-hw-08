@@ -1,0 +1,39 @@
+.filters__container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 40px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+.filters__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--bcg-main);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 25px;
+  transition: color 250ms var(--timing-function),
+      background-color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--box-shadow-filters1),
+      0px 1px 2px var(--box-shadow-filters2),
+      0px 2px 2px var(--box-shadow-command1);
+    border-radius: 4px;
+  }
+}
