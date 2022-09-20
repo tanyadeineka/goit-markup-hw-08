@@ -384,24 +384,24 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--bcg-title);
-  background-image: var(--main-gradient), url(/images/main-bcg-mob.jpg);
+  background-image: var(--main-gradient), url(../images/main-bcg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main__section {
-    background-image: var(--main-gradient), url(/images/main-bcg-mob-2x.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .main__section {
-    background-image: var(--main-gradient), url(/images/main-bcg-tab.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main__section {
-    background-image: var(--main-gradient), url(/images/main-bcg-tab-2x.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,12 +409,12 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: var(--main-gradient), url(/images/main-bcg-desk.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-desk.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main__section {
-    background-image: var(--main-gradient), url(/images/main-bcg-desk-2x.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-desk-2x.jpg);
   }
 }
 

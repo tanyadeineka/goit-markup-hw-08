@@ -4,26 +4,26 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--bcg-title);
-  background-image: var(--main-gradient), url(/images/main-bcg-mob.jpg);
+  background-image: var(--main-gradient), url(../images/main-bcg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @include retina {
-    background-image: var(--main-gradient), url(/images/main-bcg-mob-2x.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-mob-2x.jpg);
   }
   @include tablet {
-    background-image: var(--main-gradient), url(/images/main-bcg-tab.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-tab.jpg);
     @include retina {
-      background-image: var(--main-gradient), url(/images/main-bcg-tab-2x.jpg);
+      background-image: var(--main-gradient), url(../images/main-bcg-tab-2x.jpg);
     }
   }
   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: var(--main-gradient), url(/images/main-bcg-desk.jpg);
+    background-image: var(--main-gradient), url(../images/main-bcg-desk.jpg);
     @include retina {
-      background-image: var(--main-gradient), url(/images/main-bcg-desk-2x.jpg);
+      background-image: var(--main-gradient), url(../images/main-bcg-desk-2x.jpg);
     }
   } 
 }
