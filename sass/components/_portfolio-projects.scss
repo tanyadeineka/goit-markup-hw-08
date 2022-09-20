@@ -4,9 +4,20 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+.projects__item {
+  max-width: 450px;
+  @include tablet {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
+}
 .projects__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--timing-function);
   &:hover,
   &:focus {
@@ -34,10 +45,11 @@
   display: block;
 }
 .projects__footer {
-  padding: 20px 10px 20px 24px;
+  flex-grow: 1;
+  padding: 20px 24px;
   border-left: 1px solid var(--project-border);
   border-right: 1px solid var(--project-border);
-  border-bottom: 1px solid var(--project-border);
+  border-bottom: 1px solid var(--project-border);  
 }
 .projects__thumb {
   position: relative;
@@ -54,7 +66,7 @@
   line-height: calc(28 / 18);
   color: var(--white-color);
   padding: 63px 24px;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
   .projects__link:hover & {
   transform: translateY(0);

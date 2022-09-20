@@ -126,7 +126,6 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  
 }
 .mob-menu__container{
   height: 100%;
@@ -147,64 +146,69 @@
   }
 }
 .mob-menu-item { 
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
   &:not(last-of-type) {
     margin-bottom: 32px;
-  }
-  & > a {
-  text-decoration: none;
-  color: inherit;
   }
   &:hover,
   &:focus {
     color: var(--accent-color);
   }      
 }
-.mob-contact-item {
-  & > a {
-    text-decoration: none;
-    color: inherit;
+.mob-menu-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
   }
-  &:first-of-type {
+.active-mob {
+  color: var(--accent-color);
+}
+.mob-contact-box {
+  margin-bottom: 64px;
+}
+.mob-contact-item:first-child  {
+  margin-bottom: 32px;
+}
+.mob-tel-link {
+  text-decoration: none;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
-  }
-  &:last-of-type {
+}
+.mob-mail-link {
+  text-decoration: none;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  }
 }
 .mob-soc-list {
   display: flex;
-  justify-content: center;
-  }
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
 .mob-soc-item {
   font-size: 18px;
-  line-height: 22px;
+  line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
   display: flex;
   align-items: center;
-  & > a {
-    text-decoration: none;
-    color: inherit;
-  }
   &:not(:last-child)::after {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 22px;
-    background-color: var(--border-form-field);
-    margin-right: 10px;
-    margin-left: 10px;
-  } 
+  content: '';
+  width: 1px;
+  height: 22px;
+  background-color: var(--border-form-field);
+  margin-right: 9px;
+  margin-left: 9px;
+  }
+}
+.mob-soc-link {
+  text-decoration: none;
+  color: inherit;
+   
 }
