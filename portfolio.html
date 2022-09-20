@@ -16,8 +16,8 @@
 </head>
 <body>
 <!------------------------HEADER--------------------->  
-  <!-- <header class="head-border">
-    <div class="container header-div">
+  <header class="head-border">
+    <div class="container header-div mob-div">
       <nav class="navigation">
         <a href="#" class="logo-head">Web<span class="h-studio">Studio</span></a>
         <ul class="nav-links">
@@ -50,8 +50,64 @@
         </a>
       </li>
     </ul>
+    <button type="button" class="menu-open">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#menu"></use>
+      </svg>
+    </button>
     </div>
-  </header> -->
+<!------------------------ Mobile MENU ---------------------------->      
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__container">
+          <div>
+            <button type="button" class="menu-close">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-list">
+                <li class="mob-menu-item">
+                  <a href="#">Студія</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="mob-contact-list">
+              <li class="mob-contact-item">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mob-contact-item">
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mob-soc-list">
+              <li class="mob-soc-item">
+                <a href="#">Instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#">Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
     <main>
       <section class="section">
         <div class=" filters container">
@@ -318,7 +374,7 @@
     <footer class="footer-section">
       <div class="footer container">
         <div class="foot-address">
-          <a href="#" class="logo-foot">Web<span class="f-studio">Studio</span></a>
+          <a href="./index.html" class="logo-foot">Web<span class="f-studio">Studio</span></a>
           <address class="links">
           <ul class="links-list">
             <li class="links-item">
